@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title{Abstract of Multi-resolution Fourier Transform}
+\date{}
+\author{Farhang Yeganegi\\Email: farhang.yeganegi@gmail.com}
+
+
+
+\begin{document}
+\maketitle
+
+The ability to capture the directional patterns which exist at various locations, scale and orientation is a recent research trend in the image processing community. This ability can be found in the Multi-resolution Fourier Transform (MFT). The MFT has been proposed as a combination of STFT and the wavelet. With the windowing function $g(t)$, the transform of a function $f\in L^2(R)$ at position $u$, frequency $\xi$ and scale $s$ is defined as below.
+\begin{equation}
+Mf(u,\xi,s) = \int_{-\infty}^{+\infty} f(t)g(s(t-u)) e^{-i\xi t} dt
+\end{equation}
+The Laplacian pyramid is used to decompose the image according to frequency which shows isotropic behavior. At each scale, the windowed Fourier transform is applied with the same window. The high frequency directional patterns can be observed in the Fourier local spectrum.\\
+\\
+\begin{center}
+\large{My Supervisor: Professor Hamidreza Amindavar\\ Professor at Amirkabir University of Technology\\ Affiliated Professor at University of Washington}
+\end{center}
+
+
+
+
+
+
+
+
+
+\end{document}
